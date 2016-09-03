@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PocketProgrammer</string>
+    <string name="language_button">Programming Languages</string>
+    <string name="conversion_button">Conversions</string>
+    <string name="gdb_button">GDB</string>
+    <string name="calculator_button">Calculator</string>
+    <string name="linux_button">Linux Commands</string>
+    <string name="java_button">Java</string>
+    <string name="c_button">C</string>
+    <string name="cpp_button">C++</string>
+    <string name="python_button">Python</string>
+    <string name="sql_button">SQL</string>
+</resources>
