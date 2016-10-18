@@ -1,13 +1,34 @@
 <resources>
+    <!-- Home screen buttons -->
     <string name="app_name">PocketProgrammer</string>
     <string name="language_button">Programming Languages</string>
     <string name="conversion_button">Conversions</string>
     <string name="gdb_button">GDB</string>
     <string name="calculator_button">Calculator</string>
     <string name="linux_button">Linux Commands</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search a Topic</string>
+
+    <!-- Language screen buttons -->
     <string name="java_button">Java</string>
     <string name="c_button">C</string>
     <string name="cpp_button">C++</string>
     <string name="python_button">Python</string>
     <string name="sql_button">SQL</string>
+
+    <!-- Calculator screen buttons -->
+    <string name="decimal_title">Decimal</string>
+    <string name="hex_title">Hex</string>
+    <string name="binary_title">Binary</string>
+
+    <!-- Language options -->
+    <string name="topic">Choose Topic</string>
+    <string name="language_description">Description</string>
+    <string name="language_data_types">Data Types</string>
+    <string name="language_data_structures">Data Structures</string>
+    <string name="language_example_programs">Example Programs</string>
+    <!-- spinner title (prompt) -->
+    <string name="language_options">Language Options</string>
+
 </resources>

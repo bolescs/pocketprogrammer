@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decimal_title"
+        android:id="@+id/decimal_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hex_title"
+        android:id="@+id/hex_button"
+        android:layout_below="@+id/decimal_button"
+        android:layout_alignRight="@+id/decimal_button"
+        android:layout_alignEnd="@+id/decimal_button"
+        android:layout_marginTop="66dp"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/binary_title"
+        android:id="@+id/binary_button"
+        android:layout_below="@+id/hex_button"
+        android:layout_alignRight="@+id/hex_button"
+        android:layout_alignEnd="@+id/hex_button"
+        android:layout_marginTop="57dp"/>
+    </RelativeLayout>
+</ScrollView>

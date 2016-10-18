@@ -2,22 +2,95 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="cameron.boles.android.pocketprogrammer">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WelcomeActivity">
+
+        <activity android:name=".ChooseClassActivity"
+                  android:label="Which class?">
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable"
+                       android:value=".SearchResultsActivity"/>
+        </activity>
+
+        <activity android:name=".SplashActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LanguageActivity"
-            android:parentActivityName=".WelcomeActivity">
+
+        <activity android:name=".SearchResultsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChooseClassActivity">
+            </meta-data>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
         </activity>
+
+        <activity android:name=".WebActivity"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".AboutActivity"
+                  android:label="About"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".JavaActivity"
+                  android:label="Which language?"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".DatabaseActivity"
+                  android:label="Which language?"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".SystemsActivity"
+                  android:label="Which language?"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+
+        <activity android:name=".ConversionActivity"
+                  android:label="Hex and Dec and Binary Oh My"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".CalculatorActivity"
+                  android:label="Choose a Calculator"
+                  android:parentActivityName=".ChooseClassActivity">
+        </activity>
+
+        <activity android:name=".DecCalcActivity"
+                  android:label="Calculate"
+                  android:parentActivityName=".CalculatorActivity">
+        </activity>
+
+        <activity android:name=".HexCalcActivity"
+                  android:label="Calculate"
+                  android:parentActivityName=".CalculatorActivity">
+        </activity>
+
+        <activity android:name=".BinCalcActivity"
+                  android:label="Calculate"
+                  android:parentActivityName=".CalculatorActivity">
+        </activity>
+
     </application>
 
 </manifest>

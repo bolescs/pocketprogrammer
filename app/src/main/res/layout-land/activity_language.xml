@@ -2,68 +2,62 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/colorPrimaryDark">
+    android:layout_height="fill_parent">
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/language"
+            android:id="@+id/java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/new_button_style"
-            android:text="@string/language_button"
-            android:layout_marginTop="50dp"
+            android:text="@string/java_button"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
         <Button
-            android:id="@+id/conversion"
-            android:layout_below="@+id/language"
+            android:id="@+id/c"
+            android:layout_below="@+id/java"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/new_button_style"
-            android:text="@string/conversion_button"
+            android:text="@string/c_button"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
         <Button
-            android:id="@+id/calculator"
-            android:layout_below="@+id/conversion"
+            android:id="@+id/cpp"
+            android:layout_below="@+id/c"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/new_button_style"
-            android:text="@string/calculator_button"
+            android:text="@string/cpp_button"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
         <Button
-            android:id="@+id/gdb"
-            android:layout_below="@+id/calculator"
+            android:id="@+id/python"
+            android:layout_below="@+id/cpp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/new_button_style"
-            android:text="@string/gdb_button"
+            android:text="@string/python_button"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
         <Button
-            android:id="@+id/linux"
-            android:layout_below="@+id/gdb"
+            android:id="@+id/sql"
+            android:layout_below="@+id/python"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/new_button_style"
-            android:text="@string/linux_button"
+            android:text="@string/sql_button"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 </ScrollView>

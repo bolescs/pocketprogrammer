@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/new_button_style"
             android:text="@string/language_button"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
@@ -63,7 +63,8 @@
             android:background="@drawable/new_button_style"
             android:text="@string/linux_button"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"/>
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 </ScrollView>
