@@ -43,7 +43,7 @@ public class WebActivity extends AppCompatActivity
                 mWebView.loadUrl("https://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html");
             }
         }
-        /**
+
         else
         {
             Toast.makeText(getApplicationContext(), "Please enter a decimal value", Toast.LENGTH_SHORT)
@@ -58,7 +58,7 @@ public class WebActivity extends AppCompatActivity
             }
 
         }
-
+        /**
         else if (search.equals("linkedlist"))
         {
             setTitle("Array");
