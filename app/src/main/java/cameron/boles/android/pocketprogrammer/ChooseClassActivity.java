@@ -1,4 +1,4 @@
-package cameron.boles.android.pocketprogrammer;
+package apps.real.pocketprogrammer;
 
 import android.app.SearchManager;
 import android.content.ComponentName;
@@ -18,7 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 /**
- * Created by yellowpepper83 on 10/4/16.
+ * Created by Eric Moore and Cameron Boles on 10/4/16.
  */
 public class ChooseClassActivity extends AppCompatActivity
 {
@@ -52,22 +52,30 @@ public class ChooseClassActivity extends AppCompatActivity
 
                     //Database
                     case 1:
-                        Intent intent1 = new Intent(parent.getContext(), JavaActivity.class);
+                        view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+                        Intent intent1 = new Intent(parent.getContext(), DatabaseActivity.class);
                         startActivity(intent1);
                         break;
 
                     //Systems
                     case 2:
-                        Intent intent2 = new Intent(parent.getContext(), ConversionActivity.class);
+                        view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+                        Intent intent2 = new Intent(parent.getContext(), SystemsActivity.class);
                         startActivity(intent2);
                         break;
 
                     //Calculator
                     case 3:
+                        view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+                        Intent intent3 = new Intent(parent.getContext(), CalculatorActivity.class);
+                        startActivity(intent3);
                         break;
 
                     //Converter
                     case 4:
+                        view.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+                        Intent intent4 = new Intent(parent.getContext(), ConversionActivity.class);
+                        startActivity(intent4);
                         break;
 
                     default:

@@ -1,4 +1,4 @@
-package cameron.boles.android.pocketprogrammer;
+package apps.real.pocketprogrammer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +11,7 @@ public class SystemsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_language);
+        setContentView(R.layout.activity_java);
 
     }
 }
