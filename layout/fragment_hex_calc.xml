@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:background="@color/platinum">
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/left_hint"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"
+        android:id="@+id/hex_left_operand"
+        android:gravity="center"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:layout_centerHorizontal="true"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/right_hint"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"
+        android:id="@+id/hex_right_operand"
+        android:gravity="center"
+        android:textColorHint="@android:color/tertiary_text_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hex_left_operand"
+        android:layout_marginTop="20dp"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_add_button"
+        android:text="@string/add"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_below="@+id/hex_right_operand"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="4dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_sub_button"
+        android:text="@string/sub"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_toRightOf="@+id/hex_add_button"
+        android:layout_below="@+id/hex_right_operand"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_mult_button"
+        android:text="@string/mult"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_toRightOf="@+id/hex_sub_button"
+        android:layout_below="@+id/hex_right_operand"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_div_button"
+        android:text="@string/div"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_toRightOf="@+id/hex_mult_button"
+        android:layout_below="@+id/hex_right_operand"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_left_shift_button"
+        android:text="shift L"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_below="@id/hex_sub_button"
+        android:layout_alignLeft="@+id/hex_sub_button"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_right_shift_button"
+        android:text="shift R"
+        android:background="@drawable/new_button_style"
+        android:textColor="@color/text"
+        android:layout_below="@id/hex_sub_button"
+        android:layout_alignLeft="@+id/hex_mult_button"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hex_answer"
+        android:layout_below="@+id/hex_right_shift_button"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dec_convert"
+        android:layout_below="@+id/hex_answer"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bin_convert"
+        android:layout_below="@+id/dec_convert"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="28sp"/>
+
+</RelativeLayout>

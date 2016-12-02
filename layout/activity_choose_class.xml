@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/platinum">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:id="@+id/class_list"
+        android:layout_marginTop="4dp"
+        android:clickable="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorPrimary"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical"/>
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:id="@+id/speech_button"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corners"
+        android:src="@drawable/ic_action_speech"/>
+
+</LinearLayout>
