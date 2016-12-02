@@ -2,7 +2,7 @@
 
 The pocketprogrammer folder contains the entirety of our Java code.
 
-The layout and layout and layout-land folders contain all of the portrait and landscape XML files.
+The layout and layout-land folders contain all of the portrait and landscape XML files.
 
 Drawable and drawable-hdpi contain all logos and icons used in the app as well as widget decoration XML files.
 
